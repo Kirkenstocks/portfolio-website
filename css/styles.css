@@ -108,7 +108,7 @@ button:focus, .button:focus {
     display: inline-block;
     margin-left: 15px;
 }
-/*Underline from center*/
+/*start of underline from center*/
 .navigation-list__item--active {
     text-decoration: none;
     vertical-align: middle;
@@ -138,7 +138,7 @@ button:focus, .button:focus {
     left: 0;
     right: 0;
 }
-
+/*end of underline from center*/
 .about-me {
     clear: both;
     display:flex;
