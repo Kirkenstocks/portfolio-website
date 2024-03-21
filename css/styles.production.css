@@ -9,27 +9,17 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     min-height: 100vh;
-    margin: 1vw;
+    width: 100vw;
 }
 
 main {
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+    margin: 0 2vw 0 2vw;
 }
 
 section {
     margin-bottom: 5vh;
+    padding-top: 5vh;
 }
 
 h1 {
@@ -65,11 +55,6 @@ a:active {
     color: #37dddf;
 }
 
-span {
-    background-color: #2b2b2b;
-    font-size: 20px;
-    color: #fff;
-}
 .button {
     border: none;
     display: inline-block;
@@ -83,6 +68,7 @@ span {
     -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
 }
+
 button {
     border: none;
     display: inline-block;
@@ -96,6 +82,7 @@ button {
     -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
 }
+
 .button:visited {
     border: none;
     display: inline-block;
@@ -109,6 +96,7 @@ button {
     -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
 }
+
 button:visited {
     border: none;
     display: inline-block;
@@ -122,6 +110,7 @@ button:visited {
     -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
 }
+
 button:hover, .button:hover,
 button:focus, .button:focus {
     cursor: pointer;
@@ -134,6 +123,7 @@ button:focus, .button:focus {
     top: 0;
     z-index: 2;
 }
+
 .page-header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -178,6 +168,7 @@ button:focus, .button:focus {
     position: relative;
     overflow: hidden;
 }
+
 .navigation-list__item--active:before {
     content: "";
     position: absolute;
@@ -194,6 +185,7 @@ button:focus, .button:focus {
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
 }
+
 .navigation-list__item--active:hover:before, .navigation-list__item--active:focus:before, .navigation-list__item--active:active:before {
     left: 0;
     right: 0;
@@ -222,8 +214,8 @@ button:focus, .button:focus {
 }
 
 /* home section */
-.profile {
-    margin: 0 auto;
+#home {
+    margin-bottom: 5vh;
     max-width: 1200px;
 }
 
@@ -238,11 +230,10 @@ button:focus, .button:focus {
 /* about me section */
 #about {
     text-align: center;
-    margin: 0 5vw 0 5vw;
+    padding-top: 5vh;
 }
 
 .about-me {
-    padding: 2vw;
     margin: 0 auto;
 }
 
@@ -305,6 +296,11 @@ button:focus, .button:focus {
     text-align: center;
 }
 
+.backend-title {
+    margin-top: 4vh;
+    padding-top: 4vh;
+}
+
 /* work section */
 .work-title {
     text-align: center;
@@ -334,12 +330,12 @@ button:focus, .button:focus {
     background-color: #0a3f40;
     color: #fff;
     text-decoration: none;
-    padding: 10px;
+    padding: 8px;
     border-radius: 3px;
     border-bottom: 2px solid #2b2b2b;
     -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
-    width: 40%;
+    width: 25%;
     margin: auto;
 }
 
@@ -350,12 +346,12 @@ button:focus, .button:focus {
     background-color: #0a3f40;
     color: #fff;
     text-decoration: none;
-    padding: 10px;
+    padding: 8px;
     border-radius: 3px;
     border-bottom: 2px solid #2b2b2b;
     -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
-    width: 40%;
+    width: 25%;
     margin: auto;
 }
 
@@ -466,6 +462,7 @@ button:focus, .button:focus {
 /* contact section */
 #contact {
     text-align: center;
+    padding-top: 2vh;
 }
 
 .contact-text {
@@ -532,7 +529,152 @@ button:focus, .button:focus {
             animation: shake 0.5s infinite;
 }
 
+/* case study */
+#case-main {
+    padding: 0 5vw;
+}
+
+#case-main h1, h2 {
+    text-align: center;
+}
+
+#case-main img {
+    -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 1);
+            box-shadow: 0 0 7px rgba(0, 0, 0, 1);
+    border-radius: 5px;
+}
+
+.case-header {
+    background-color: #0a3f40;
+    border-bottom: 1vh solid #189698;
+    height: 10vh;
+    position: sticky;
+    top: 0;
+    padding: 20px 0 0 40px;
+    z-index: 2;
+}
+
+.case-header a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.case-title {
+    text-align: center;
+    font-size: 35px;
+}
+
+#intro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.intro-text {
+    width: 100%;
+}
+
+.intro-image {
+    padding-top: 20vh;
+    margin-left: 3vw;
+}
+
+.intro-image img {
+    width: 100%;
+}
+
+#approach h3 {
+    color: #0a3f40;
+}
+
+.caption {
+    text-align: center;
+    opacity: 0.8;
+    margin-top: 1vh;
+    font-size: 14px;
+}
+
+.server {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+}
+
+.server-text {
+    width: 100%;
+}
+
+.server-image {
+    width: 100%;
+    margin-right: 3vw;
+    padding-top: 5vh;
+}
+
+.server-image img {
+    width: 100%;
+}
+
+.server-button-container {
+    text-align: center;
+}
+
+.server-button, .client-button {
+    margin: 0 1.5vw;
+}
+
+.client-button-container {
+    text-align: center;
+}
+
+.client-image {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 2vh 0;
+}
+
+.client-image div {
+    width: 32%;
+}
+
+.client-image img {
+    width: 100%;
+}
+
+.credits {
+    line-height: 1;
+}
+
 /* adjust for screen size */
+@media all and (max-width: 485px) {
+    .page-header {
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        padding: 5px;
+        margin-bottom: 1vh;
+    }
+
+    .page-header__item {
+        width: 30px;
+    }
+}
+
 @media all and (max-width: 550px) {
     .skills-container {
         -ms-grid-columns: 1fr;
@@ -551,7 +693,11 @@ button:focus, .button:focus {
 }
 
 @media all and (max-width: 700px) {
-  .project-list {
+    main {
+        margin: 0 1vw 0 1vw;
+    }
+  
+    .project-list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     grid-gap: 10px;
@@ -579,24 +725,75 @@ button:focus, .button:focus {
   .nursing-picture {
     margin-top: 4vh;
   }
+
+  .server {
+    display: block;
+  }
+
+  .client-image div {
+    width: 100%;
+    margin-bottom: 4vh;
+}
+}
+
+@media all and (max-width: 850px) {
+    section {
+        padding-top: 2vh;
+    }
+
+    #about {
+        padding-top: 2vh;
+    }
+
+    #intro {
+        display: block;
+        padding-top: 2vh;
+    }
+
+    .intro-image {
+        padding-top: 2vh;
+    }
 }
 
 @media all and (min-width: 700px) and (max-width: 1000px) {
-  .project-list {
-    -ms-grid-columns: 1fr 10px 1fr;
-    grid-template-columns: 1fr 1fr;
-  } 
+    main {
+        margin: 0 1vw 0 1vw;
+    }
 
-  .modal {
-    width: 80vw;
-  }
+    .project-list {
+        -ms-grid-columns: 1fr 10px 1fr;
+        grid-template-columns: 1fr 1fr;
+    } 
 
-  .nursing-picture {
-    margin-top: 4vh;
-  }
+    .modal {
+        width: 80vw;
+    }
+
+    .nursing-picture {
+        margin-top: 4vh;
+    }
+
+    .server-image {
+        padding-top: 12vh;
+    }
+
+    .client-image div {
+        width: 90%;
+        margin: 0 5% 4vh;
+    }   
+}
+
+@media all and (max-width: 1000px) {
+    .client-image {
+        display: block;
+    }
 }
 
 @media all and (min-width: 1000px) {
+    #about {
+        padding-top: 10vh;
+    }
+    
     .skills-item p {
         text-align: center;
     }
@@ -607,6 +804,18 @@ button:focus, .button:focus {
 
     .modal {
         width: 60vw;
+    }
+
+    .intro-image {
+        padding-top: 10vh;
+    }
+}
+
+@media all and (min-width: 1150px) {
+    .server-image {
+        text-align: center;
+        width: 80%;
+        padding-top: 0;
     }
 }.example {
     display: -ms-grid;
