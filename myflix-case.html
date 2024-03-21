@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>myFlix Case Study</title>
+	<link rel="shortcut icon" type="image/ico" href="img/favicon.ico">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.production.css">
+</head>
+<body id="case-body">
+	<header class="case-header">
+		<a href="index.html#work">&#8249; Back to Portfolio</a>
+	</header>
+	<main id="case-main">
+		<h1 class="case-title">myFlix Case Study</h1>
+	<section id="intro">
+		<div class="intro-text">
+			<h2>Overview</h2>
+			<p>
+				myFlix is a full-stack web application using the MERN stack that enables users to find information on all the Star Wars movies. 
+				After signing up, users can add movies to their list of favorites and update their account information as needed.
+			</p>
+			<h2>Purpose and Context</h2>
+			<p>
+				I built this project for the CareerFoundry Web Development program to learn about full-stack application development and the variety of technologies needed to do so. 
+				myFlix was the first full-stack application I developed, representing a significant milestone in my web development journey.
+			</p>
+			<h2>Tools</h2>
+			<p>
+				A MongoDB non-relational database houses all movie and user data, with Mongoose providing structure and access to the database. 
+				Node.js and Express were used to write the server-side code and API needed to connect the database to the front-end, which was built with React and styled with React-Bootstrap and SCSS.
+			</p>
+		</div>
+		<div class="intro-image">
+			<img src="img/myflix-main-view.png" alt="image of the home page of myFlix with 3 movie cards displayed">
+			<p class="caption">myFlix home page</p>
+		</div>
+	</section>
+	<section id="approach">
+		<h2>Approach</h2>
+		<div class="server">
+			<div class="server-text">
+				<h3>Server-Side</h3>
+				<p>
+					I built a RESTful API to interact with a MongoDB non-relational database that contains data for 10 movies. The API can be accessed with common HTTP methods and sends movie and user data back to the requester in JSON format. 
+					Passport was used for HTTP authentication of logins, and upon logging in the user is sent a JSON web token to authorize access to the movie data. Additional data security measures include CORS restrictions, data validation, and hashing of the user’s password. 
+					To ensure everything worked as intended, I tested each API endpoint thoroughly using Postman.
+				</p>
+				<div class="server-button-container">
+					<a href="https://github.com/Kirkenstocks/movie_api" target="_blank" class="button server-button">Repository</a>
+					<a href="./files/api_documentation/documentation.html" target="_blank" class="button server-button">Endpoints</a>
+				</div>
+			</div>
+			<div class="server-image">
+				<img src="img/movie_api-code.png" alt="image of a code snippet from Kirk's movie_api repository">
+				<p class="caption">Code snippet from update user endpoint</p>
+			</div>
+		</div>
+		<div class="client">
+			<div class="client-text">
+				<h3>Client-Side</h3>
+				<p>
+					With the server-side complete, I moved on to building the user interface. In order to meet the project requirements, I used React to create a single page application with the following views:
+				</p>
+				<ul>
+					<li>
+						Main View: displays each movie as a card with vital information included
+					</li>
+					<li>
+						Movie View: displays all the information for a single movie
+					</li>
+					<li>
+						Profile View: displays user information, favorited movies, and allows the user to update their account information
+					</li>
+					<li>
+						Login View: allows a registered user to login
+					</li>
+					<li>
+						Signup View: allows new users to create an account
+					</li>
+				</ul>
+				<p>
+					I applied a simple but visually appealing style to the application, utilizing SCSS and React-Bootstrap to create a responsive layout with a dark theme.
+				</p>
+			</div>
+			<div class="client-image">
+				<div>
+					<img src="img/myflix-login-view.png" alt="image of the login page of myFlix">
+					<p class="caption">Login View</p>
+				</div>
+				<div>
+					<img src="img/myflix-movie-view.png" alt="image of a the movie view for Star Wars Episode IV: A New Hope on myFlix">
+					<p class="caption">Movie View</p>
+				</div>
+				<div>
+					<img src="img/myflix-profile-view.png" alt="image of the profile view on myFlix with a form displayed to update the user's info">
+					<p class="caption">Profile View</p>
+				</div>
+			</div>
+			<div class="client-button-container">
+				<a href="https://myflix-sw.netlify.app/signup" target="_blank" class="button client-button" style="margin-right: 1vw;">Live Site</a>
+                <a href="https://github.com/Kirkenstocks/myFlix-client" target="_blank" class="button client-button" style="margin-left: 1vw; margin-right: 1vw">Repository</a>
+			</div>
+		</div>
+	</section>
+	<section id="conclusion">
+		<h2>Challenges</h2>
+		<p>
+			This was the most challenging yet rewarding project I completed during my CareerFoundry program, as it gave me the opportunity to learn about a variety of tools and techniques that have been essential to my growth as a full-stack developer. 
+			The hardest portion for me was creating the profile view, but completing it reinforced the value of approaching a relatively large task (creating a whole view from scratch) by dividing it into a series of smaller tasks in order to achieve the desired result. 
+			Overall, I am happy with the end result, thankful for everything I learned throughout the build process, and proud to have completed my first full-stack application.
+		</p>
+		<h2>Duration</h2>
+		<p>
+			It took me 2 months to complete the entire project from start to finish, longer than I had originally anticipated. 
+			This was due to the amount of time I spent familiarizing myself with the new technologies I used, particularly React, and that I was living in a van and travelling full-time with inconsistent internet access for the duration of the project.
+		</p>
+		<h2>Future Steps</h2>
+		<p>
+			If I return to this project, my next steps would be to rebrand the application as a Star Wars-specific repository, add more information about each movie, and add iconic Star Wars shows to the database.
+		</p>
+		<h2>Credits</h2>
+		<div class="credits">
+			<p>Lead Developer: Kirk Meyer</p>
+			<p>Tutor: Bethany Ann</p>
+			<p>Mentor: Jonatan Caraballo</p>
+		</div>
+	</section>
+	</main>
+	<footer class="page-footer">
+        <p>Find me on</p>
+        <div class="social-media">
+            <a href="https://github.com/Kirkenstocks" target="_blank" class="social-media-icons"><img src="img/github_icon.svg" alt="Github logo"></a>
+            <a href="https://www.linkedin.com/in/kirk-meyer-19622a103/" target="_blank" class="social-media-icons"><img src="img/linkedin_icon.svg" alt="LinkedIn logo"></a>
+            <a href="https://www.instagram.com/roaming_llamas/" target="_blank" class="social-media-icons"><img src="img/instagram_icon.svg" alt="Instagram logo"></a>
+        </div>
+    </footer>
+</body>
+</html>
