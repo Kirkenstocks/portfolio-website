@@ -14,11 +14,10 @@
     <link rel="stylesheet" type="text/css" href="css/styles.production.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
-
 <body>
     <div class="header-container">
         <header class="page-header">
-            <img src="img/star_trek.svg" class="page-header__item" alt="Image of an officer's badge from Star Trek.">
+            <img src="img/star_trek.svg" class="page-header__item logo" alt="Image of an officer's badge from Star Trek.">
             <nav class="main-navigation page-header__item">
                 <ul role="menubar" class="navigation-list">
                     <li role="presentation">
@@ -40,418 +39,422 @@
             </nav>
         </header>
     </div>
-    <section id="home">
-        <div class="profile">
-            <!--Need better photo before applying for jobs-->
-            <img src="img/profile-pic.png" class="profile__portrait" alt="A photo of me from Mount Rainier with snow and mountains in the background.">
-            <h1>Welcome to my portfolio!</h1>
-            <p>Hello! My name is Kirk Meyer, and I'm a Full-Stack Developer from the Pacific Northwest. 
-                I’m excited to use the problem solving skills, analytical mindset, and unique perspective gained from my experience as a Registered Nurse to contribute to innovative projects that help their users live healthier, happier lives.</p>
-        </div>
-    </section>
-    <section id="about">
-        <h1>About Me</h1>
-        <div class="about-me">
-            <img src="img/nursing.JPG" alt="Image of Kirk in a white nursing lab coat" class="nursing-picture"
+    <main>
+        <section id="home">
+            <div class="profile">
+                <!--Need better photo before applying for jobs-->
+                <img src="img/profile-pic.png" class="profile__portrait" alt="A photo of me from Mount Rainier with snow and mountains in the background.">
+                <h1>Welcome to my portfolio!</h1>
+                <p>Hello! My name is Kirk Meyer, and I'm a Full-Stack Developer from the Pacific Northwest. 
+                    I’m excited to use the problem solving skills, analytical mindset, and unique perspective gained from my experience as a Registered Nurse to contribute to innovative projects that help their users live healthier, happier lives.</p>
+            </div>
+        </section>
+        <section id="about">
+            <h1>About Me</h1>
+            <div class="about-me">
+                <img src="img/nursing.JPG" alt="Image of Kirk in a white nursing lab coat" class="nursing-picture"
+                    data-aos="fade-left"
+                    data-aos-duration="750"
+                    data-aos-easing="ease-in-out"
+                    data-aos-anchor-placement="top-center"
+                >
+                <p
+                    data-aos="fade-left"
+                    data-aos-duration="750"
+                    data-aos-easing="ease-in-out"
+                    class="about-me__item"
+                >
+                    I graduated from California State University, Stanislaus in 2017 with my Bachelor’s of Science in Nursing. 
+                    Although nursing ultimately wasn’t the right fit for me, I loved the work I did and still cherish the impact I got to make on the lives of my patients. 
+                    My nursing experience taught me to be adaptable and honed my ability to solve complex problems with dynamic circumstances through critical thinking and teamwork. 
+                    After 5 years, I made the decision to pursue a different passion: coding.
+                </p>
+                <p
+                    data-aos="fade-right"
+                    data-aos-duration="750"
+                    data-aos-easing="ease-in-out"
+                    class="about-me__item"
+                >
+                This decision led me to complete CareerFoundry’s full-stack web development program, which has taught me the essential skills and honed the mindset needed to be a successful developer. 
+                My learning journey has been fueled by a growth mindset and love for solving problems while watching the application I’m building come to life.
+                I am looking to join a team whose work improves the lives of their product’s users, and continue my personal mission of making a positive impact on the lives of others. 
+                If you’re looking for a developer who is an excellent teammate, adaptable, and committed to continued growth, look no further!
+                </p>
+            </div>
+            <div 
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                class="cv-button"
+            >    
+                <!--need tech CV when made-->
+                   <a href="files/cv.pdf" class="button" target="_blank" download>Download my CV</a>
+            </div>
+        </section>
+        <section id="skills">
+            <h1 class="skills-title">Skills</h1>
+            <h2
                 data-aos="fade-left"
                 data-aos-duration="750"
                 data-aos-easing="ease-in-out"
-                data-aos-anchor-placement="top-center"
             >
-            <p
+                Front End Development
+            </h2>
+            <div class="skills-container"
                 data-aos="fade-left"
                 data-aos-duration="750"
                 data-aos-easing="ease-in-out"
-                class="about-me__item"
             >
-                I graduated from California State University, Stanislaus in 2017 with my Bachelor’s of Science in Nursing. 
-                Although nursing ultimately wasn’t the right fit for me, I loved the work I did and still cherish the impact I got to make on the lives of my patients. 
-                My nursing experience taught me to be adaptable and honed my ability to solve complex problems with dynamic circumstances through critical thinking and teamwork. 
-                After 5 years, I made the decision to pursue a different passion: coding.
-            </p>
-            <p
+                <div class="skills-item">
+                    <h3>Languages</h3>
+                    <p>HTML, CSS, SCSS, JavaScript, TypeScript</p>
+                </div>
+                <div class="skills-item">
+                    <h3>Frameworks and Libraries</h3>
+                    <p>React, Angular, Material, Bootstrap, React-Bootstrap, jQuery</p>
+                </div>
+                <div class="skills-item">
+                    <h3>Responsive Design</h3>
+                    <p>Skilled in creating visually appealing, user-friendly interfaces for all devices</p>
+                </div>
+                <div class="skills-item">
+                    <h3>Mobile Development</h3>
+                    <p>Acquired skills in mobile app development with React-Native and Expo</p>
+                </div>
+                <div class="skills-item">
+                    <h3>Test-Driven Development</h3>
+                    <p>Experience with unit, integration, and end-to-end testing</p>
+                </div>
+                <div class="skills-item">
+                    <h3>Progressive Web Apps</h3>
+                    <p>Experience building a progressive web app that meets Lighthouse's PWA standards</p>
+                </div>
+            </div>
+            <h2
                 data-aos="fade-right"
                 data-aos-duration="750"
                 data-aos-easing="ease-in-out"
-                class="about-me__item"
+                class="backend-title"
             >
-            This decision led me to complete CareerFoundry’s full-stack web development program, which has taught me the essential skills and honed the mindset needed to be a successful developer. 
-            My learning journey has been fueled by a growth mindset and love for solving problems while watching the application I’m building come to life.
-            I am looking to join a team whose work improves the lives of their product’s users, and continue my personal mission of making a positive impact on the lives of others. 
-            If you’re looking for a developer who is an excellent teammate, adaptable, and committed to continued growth, look no further!
-            </p>
-		</div>
-        <div 
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-            class="cv-button"
-        >    
-			<!--need tech CV when made-->
-       		<a href="files/cv.pdf" class="button" target="_blank" download>Download my CV</a>
-		</div>
-    </section>
-    <section id="skills">
-        <h1 class="skills-title">Skills</h1>
-        <h2
-            data-aos="fade-left"
-            data-aos-duration="750"
-            data-aos-easing="ease-in-out"
-        >
-            Front End Development
-        </h2>
-        <div class="skills-container"
-            data-aos="fade-left"
-            data-aos-duration="750"
-            data-aos-easing="ease-in-out"
-        >
-            <div class="skills-item">
-                <h3>Languages</h3>
-                <p>HTML, CSS, SCSS, JavaScript, TypeScript</p>
-            </div>
-            <div class="skills-item">
-                <h3>Frameworks and Libraries</h3>
-                <p>React, Angular, Material, Bootstrap, React-Bootstrap, jQuery</p>
-            </div>
-            <div class="skills-item">
-                <h3>Responsive Design</h3>
-                <p>Skilled in creating visually appealing, user-friendly interfaces for all devices</p>
-            </div>
-            <div class="skills-item">
-                <h3>Mobile Development</h3>
-                <p>Acquired skills in mobile app development with React-Native and Expo</p>
-            </div>
-            <div class="skills-item">
-                <h3>Test-Driven Development</h3>
-                <p>Experience with unit, integration, and end-to-end testing</p>
-            </div>
-            <div class="skills-item">
-                <h3>Progressive Web Apps</h3>
-                <p>Experience building a progressive web app that meets Lighthouse's PWA standards</p>
-            </div>
-        </div>
-        <h2
-            data-aos="fade-right"
-            data-aos-duration="750"
-            data-aos-easing="ease-in-out"
-        >
-            Back End Development
-        </h2>
-        <div class="skills-container"
-            data-aos="fade-right"
-            data-aos-duration="750"
-            data-aos-easing="ease-in-out"
-        >
-            <div class="skills-item">
-                <h3>APIs</h3>
-                <p>Proficient at retrieving data from an external API or building one myself</p>
-            </div>
-            <div class="skills-item">
-                <h3>Databases</h3>
-                <p>
-                    Proficient with non-relational databases (MongoDB),
-                    familiar with relational databases (PostgreSQL)
-                </p>
-            </div>
-            <div class="skills-item">
-                <h3>Node.js and Express</h3>
-                <p>Able to build scalable server-side applications with robust security measures</p>
-            </div>
-            <div class="skills-item">
-                <h3>Web Services</h3>
-                <p>Experience with Render, Netlify, AWS, and Google Firebase/Firestore</p>
-            </div>
-        </div>
-    </section>
-    <section id="work">
-        <h1 class="work-title">Work</h1>
-        <div class="project-list"
-            data-aos="fade-left"
-            data-aos-duration="750"
-            data-aos-easing="ease-in-out"
-        >
-            <div class="project-list__item">
-                <div class="modal-toggle-container">
-                    <a class="modal-open">+</a>
+                Back End Development
+            </h2>
+            <div class="skills-container"
+                data-aos="fade-right"
+                data-aos-duration="750"
+                data-aos-easing="ease-in-out"
+            >
+                <div class="skills-item">
+                    <h3>APIs</h3>
+                    <p>Proficient at retrieving data from an external API or building one myself</p>
                 </div>
-                <h2 class="project-title">myFlix (React)</h2>
-                <div class="work-img-container">
-                    <img src="img/myFlix_React_screenshot.png"
-                    alt="An image of the home page of myFlix, showing 4 Star Wars movies"
-                    class="work-image"
+                <div class="skills-item">
+                    <h3>Databases</h3>
+                    <p>
+                        Proficient with non-relational databases (MongoDB),
+                        familiar with relational databases (PostgreSQL)
+                    </p>
+                </div>
+                <div class="skills-item">
+                    <h3>Node.js and Express</h3>
+                    <p>Able to build scalable server-side applications with robust security measures</p>
+                </div>
+                <div class="skills-item">
+                    <h3>Web Services</h3>
+                    <p>Experience with Render, Netlify, AWS, and Google Firebase/Firestore</p>
+                </div>
+            </div>
+        </section>
+        <section id="work">
+            <h1 class="work-title">Work</h1>
+            <div class="project-list"
+                data-aos="fade-left"
+                data-aos-duration="750"
+                data-aos-easing="ease-in-out"
+            >
+                <div class="project-list__item">
+                    <div class="modal-toggle-container">
+                        <a class="modal-open">+</a>
+                    </div>
+                    <h2 class="project-title">myFlix (React)</h2>
+                    <div class="work-img-container">
+                        <img src="img/myFlix_React_screenshot.png"
+                        alt="An image of the home page of myFlix, showing 4 Star Wars movies"
+                        class="work-image"
+                        >
+                    </div>
+                    <p>
+                        A React front-end build for my Movie API that allows users to look up information about every Star Wars movie, create a profile, and save favorite movies to their profile.
+                    </p>
+                    <div class="work-button-container">
+                        <a href="https://myflix-sw.netlify.app/signup" target="_blank" class="work-button" style="margin-right: 1vw;">Demo</a>
+                        <a href="https://github.com/Kirkenstocks/myFlix-client" target="_blank" class="work-button" style="margin-left: 1vw; margin-right: 1vw">GitHub</a>
+                        <a href="myflix-case.html" class="work-button" style="margin-left: 1vw">Case</a>
+                    </div>
+                    <dialog class="modal">
+                        <div class="modal-toggle-container">
+                            <a class="modal-close">x</a>
+                        </div>
+                        <h2>myFlix (React)</h2>
+                        <h3>Features</h3>
+                        <ul>
+                            <li>Fetches all movies with their details and displays them as cards in a Main View.</li>
+                            <li>User can open a single Movie View where they are shown movie details including synopsis, director, and genre.</li>
+                            <li>Allows users to create an account and add movies to their list of favorites.</li>
+                            <li>Profile View displays the user's information and favorite movies, and allows the user to update their information or delete their account.</li>
+                            <li>Users can search for movies by title in the Main View.</li>
+                        </ul>
+                        <h3>Technologies Used</h3>
+                        <div>
+                            <span class="technology">React</span>
+                            <span class="technology">JavaScript/JSX</span>
+                            <span class="technology">React-Bootstrap</span>
+                            <span class="technology">React-Router</span>
+                            <span class="technology">SCSS</span>
+                            <span class="technology">Parcel</span>
+                            <span class="technology">Netlify</span>
+                            <span class="technology">PropTypes</span>
+                        </div>
+                    </dialog>
+                </div>
+                <div class="project-list__item">
+                    <div class="modal-toggle-container">
+                        <a class="modal-open">+</a>
+                    </div>
+                    <h2 class="project-title">Meet App</h2>
+                    <div class="work-img-container">
+                        <img src="img/meet_screenshot.png" 
+                        alt="An image of the main page of Kirk's Meet App, showing the title, city search box, number of events selector box, a scatter chart, pie chart, and one event"
+                        class="work-image"
+                        >
+                    </div>
+                    <p>
+                        A progressive web app using serverless architecture to display event data from a public Google Calendar, built with a test-driven development approach.
+                    </p>
+                    <div class="work-button-container">
+                        <a href="https://kirkenstocks.github.io/meet/" target="_blank" class="work-button" style="margin-right: 2vw;">Demo</a>
+                        <a href="https://github.com/Kirkenstocks/meet" target="_blank" class="work-button" style="margin-left: 2vw;">GitHub</a>
+                    </div>
+                    <dialog class="modal">
+                        <div class="modal-toggle-container">
+                            <a class="modal-close">x</a>
+                        </div>
+                        <h2>Meet App</h2>
+                        <h3>Features</h3>
+                        <ul>
+                            <li>Users can view a list of events from multiple cities, filter events by a specific city, show/hide event details, and specify the number of events to display.</li>
+                            <li>Utilizes Google OAuth2 for user authorization and fetches event data via the Google Calendar API.</li>
+                            <li>AWS Lambda serverless functions are used to facilitate user authorization and event data retrieval.</li>
+                            <li>Charts display data about the types and location of events the user has filtered for.</li>
+                            <li>Adheres to Lighthouse's PWA standards.</li>
+                            <li>Supports offline usage and can be easily added to a device's home screen.</li>
+                        </ul>
+                        <h3>Technologies Used</h3>
+                        <div>
+                            <span class="technology">React</span>
+                            <span class="technology">JavaScript/JSX</span>
+                            <span class="technology">CSS</span>
+                            <span class="technology">AWS Lambda</span>
+                            <span class="technology">Google Calendar API</span>
+                            <span class="technology">Google OAuth2</span>
+                            <span class="technology">Recharts</span>
+                            <span class="technology">Jest/Jest-Cucumber</span>
+                            <span class="technology">Puppeteer</span>
+                            <span class="technology">GitHub Pages</span>
+                            <span class="technology">Atatus</span>
+                        </div>
+                    </dialog>
+                </div>
+                <div class="project-list__item">
+                    <div class="modal-toggle-container">
+                        <a class="modal-open">+</a>
+                    </div>
+                    <h2 class="project-title">Movie API</h2>
+                    <div class="work-img-container">
+                        <img src="img/movie_api_screenshot.png"
+                        alt="An image of the movie data displayed in a computer terminal screen"
+                        class="work-image"
+                        >
+                    </div>
+                    <p>
+                        A REST API that provides users with access to a movie database containing information about a small selection of movies, as well as their genre and director.
+                    </p>
+                    <div class="work-button-container">
+                        <a href="https://github.com/Kirkenstocks/movie_api" target="_blank" class="work-button">GitHub</a>
+                    </div>
+                    <dialog class="modal">
+                        <div class="modal-toggle-container">
+                            <a class="modal-close">x</a>
+                        </div>
+                        <h2>Movie API</h2>
+                        <h3>Features</h3>
+                        <ul>
+                            <li>This API is the backend for the myFlix web application, which has a version built in React and Angular.</li>
+                            <li>Allows myFlix users to access information about movies, genres, and directors via API endpoints. Users can also save movies to their list of favorites.</li>
+                            <li>Stores all movie and user data for myFlix in a NoSQL database.</li>
+                            <li>Utilizes user authentication, authorization, and data validation logic to maintain data security and integrity.</li>
+                            <li>All endpoints have been tested using Postman to verify functionality.</li>
+                        </ul>
+                        <h3>Technologies Used</h3>
+                        <div>
+                            <span class="technology">JavaScript</span>
+                            <span class="technology">Node.js</span>
+                            <span class="technology">CORS</span>
+                            <span class="technology">JSON Web Token</span>
+                            <span class="technology">Bcrypt</span>
+                            <span class="technology">Passport</span>
+                            <span class="technology">Body-parser</span>
+                            <span class="technology">MongoDB</span>
+                            <span class="technology">Mongoose</span>
+                            <span class="technology">Render (hosting)</span>
+                            <span class="technology">JSDoc</span>
+                            <span class="technology">Postman</span>
+                        </div>
+                    </dialog>
+                </div>
+                <div class="project-list__item">
+                    <div class="modal-toggle-container">
+                        <a class="modal-open">+</a>
+                    </div>
+                    <h2 class="project-title">myFlix (Angular)</h2>
+                    <div class="work-img-container">
+                        <img src="img/myFlix_Angular_screenshot.png"
+                        alt="An image of the home page of myFlix, showing 4 Star Wars movies"
+                        class="work-image"
+                        >
+                    </div>
+                    <p>
+                        An Angular front-end build for my Movie API that allows users to look up information about every Star Wars movie, create a profile, and save favorite movies to their profile.
+                    </p>
+                    <div class="work-button-container">
+                        <a href="https://kirkenstocks.github.io/myFlix-Angular-client/welcome" target="_blank" class="work-button" style="margin-right: 2vw;">Demo</a>
+                        <a href="https://github.com/Kirkenstocks/myFlix-Angular-client" target="_blank" class="work-button" style="margin-left: 2vw;">GitHub</a>
+                    </div>
+                    <dialog class="modal">
+                        <div class="modal-toggle-container">
+                            <a class="modal-close">x</a>
+                        </div>
+                        <h2>myFlix (Angular)</h2>
+                        <p></p>
+                        <h3>Features</h3>
+                        <ul>
+                            <li>Fetches all movies with their details and displays them as cards.</li>
+                            <li>User can select a movie to be shown movie details including synopsis, director, and genre.</li>
+                            <li>Allows users to create an account and add movies to their list of favorites.</li>
+                            <li>Profile page displays the user's information and favorite movies, and allows the user to update their information or delete their account.</li>
+                        </ul>
+                        <h3>Technologies Used</h3>
+                        <div>
+                            <span class="technology">Angular</span>
+                            <span class="technology">Angular Material</span>
+                            <span class="technology">TypeScript</span>
+                            <span class="technology">HTML</span>
+                            <span class="technology">SCSS</span>
+                            <span class="technology">TypeDoc</span>
+                            <span class="technology">GitHub Pages</span>
+                        </div>
+                    </dialog>
+                </div>
+                <div class="project-list__item">
+                    <div class="modal-toggle-container">
+                        <a class="modal-open">+</a>
+                    </div>
+                    <h2 class="project-title">Chat App</h2>
+                    <div class="work-img-container">
+                        <img src="img/chat_app_screenshot.png"
+                        alt="An image of the chat app welcome screen and the chat screen side-by-side"
+                        class="work-image"
                     >
+                    </div>
+                    <p>
+                        A mobile chat app built in React Native that allows users to send messages in a group chat room and share images and their location.
+                    </p>
+                    <div class="work-button-container">
+                        <a href="https://github.com/Kirkenstocks/chat-app" target="_blank" class="work-button">GitHub</a>
+                    </div>  
+                    <dialog class="modal">
+                        <div class="modal-toggle-container">
+                            <a class="modal-close">x</a>
+                        </div>
+                        <h2>Chat App</h2>
+                        <h3>Features</h3>
+                        <ul>
+                            <li>Users can enter a group chat room to send and recevie messages, and choose a background color for the chat screen.</li>
+                            <li>Allows users to send text messages, images, and their location.</li>
+                            <li>Messages are stored in a Google Firestore database and loaded asynchronously so they can be read offline.</li>
+                            <li>Anonymous authentication is handled by Google Firebase.</li>
+                        </ul>
+                        <h3>Technologies Used</h3>
+                        <div>
+                            <span class="technology">React Native</span>
+                            <span class="technology">Google Firestore and Firebase</span>
+                            <span class="technology">Expo</span>
+                            <span class="technology">GiftedChat</span>
+                            <span class="technology">JavaScript/JSX</span>
+                            <span class="technology">Android Studio</span>
+                        </div>
+                    </dialog>
                 </div>
-                <p>
-                    A React front-end build for my Movie API that allows users to look up information about every Star Wars movie, create a profile, and save favorite movies to their profile.
-                </p>
-                <div class="work-button-container">
-                    <a href="https://myflix-sw.netlify.app/signup" target="_blank" class="work-button" style="margin-right: 2vw;">View Site</a>
-                    <a href="https://github.com/Kirkenstocks/myFlix-client" target="_blank" class="work-button" style="margin-left: 2vw;">GitHub</a>
-                </div>
-                <dialog class="modal">
+                <div class="project-list__item">
                     <div class="modal-toggle-container">
-                        <a class="modal-close">x</a>
+                        <a class="modal-open">+</a>
                     </div>
-                    <h2>myFlix (React)</h2>
-                    <h3>Features</h3>
-                    <ul>
-                        <li>Fetches all movies with their details and displays them as cards in a Main View.</li>
-                        <li>User can open a single Movie View where they are shown movie details including synopsis, director, and genre.</li>
-                        <li>Allows users to create an account and add movies to their list of favorites.</li>
-                        <li>Profile View displays the user's information and favorite movies, and allows the user to update their information or delete their account.</li>
-                        <li>Users can search for movies by title in the Main View.</li>
-                    </ul>
-                    <h3>Technologies Used</h3>
-                    <div>
-                        <span class="technology">React</span>
-                        <span class="technology">JavaScript/JSX</span>
-                        <span class="technology">React-Bootstrap</span>
-                        <span class="technology">React-Router</span>
-                        <span class="technology">SCSS</span>
-                        <span class="technology">Parcel</span>
-                        <span class="technology">Netlify</span>
-                        <span class="technology">PropTypes</span>
+                    <h2 class="project-title">Pokédex App</h2>
+                    <div class="work-img-container">
+                        <img src="img/pokedex_screenshot.png"
+                        alt="An image of the Pokédex app home page, with 27 Pokémon buttons displayed containing the names of each pokemon"
+                        class="work-image"
+                        >
                     </div>
-                </dialog>
+                    <p>
+                        A simple web application that allows users to find information about the first 150 Pokémon. It fetches data from the Poké API and allows users to filter by name.
+                    </p>
+                    <div class="work-button-container">
+                        <a href="https://kirkenstocks.github.io/pokedex/" target="_blank" class= "work-button" style="margin-right: 2vw;">Demo</a>
+                        <a href="https://github.com/Kirkenstocks/pokedex" target="_blank" class="work-button" style="margin-left: 2vw;">GitHub</a>
+                    </div>
+                    <dialog class="modal">
+                        <div class="modal-toggle-container">
+                            <a class="modal-close">x</a>
+                        </div>
+                        <h2>Pokédex App</h2>
+                        <h3>Features</h3>
+                        <ul>
+                            <li>Loads data about the first 150 Pokémon from an external API and displays it once the page is loaded.</li>
+                            <li>Displays a button with each Pokémon's name.</li>
+                            <li>Upon clicking a Pokémon button, the user is shown a modal with details about the given Pokémon.</li>
+                            <li>User can search for a Pokémon by name.</li>
+                        </ul>
+                        <h3>Technologies Used</h3>
+                        <div>
+                            <span class="technology">HTML</span>
+                            <span class="technology">CSS</span>
+                            <span class="technology">JavaScript</span>
+                            <span class="technology">Bootstrap</span>
+                            <span class="technology">jQuery</span>
+                        </div>
+                    </dialog>
+                </div>
             </div>
-            <div class="project-list__item">
-                <div class="modal-toggle-container">
-                    <a class="modal-open">+</a>
+        </section>
+        <section id="contact">
+            <h1>Contact Me</h1>
+            <div
+                data-aos="fade-right"
+                data-aos-duration="750"
+                data-aos-easing="ease-in-out"
+            >
+                <div class="contact-img">
+                    <a href="mailto:kirkmeyer03@gmail.com" target="_blank">
+                        <img src="img/email-icon.svg" alt="Image of an envelope with an outbound arrow" class="email-icon">
+                    </a>
                 </div>
-                <h2 class="project-title">Meet App</h2>
-                <div class="work-img-container">
-                    <img src="img/meet_screenshot.png" 
-                    alt="An image of the main page of Kirk's Meet App, showing the title, city search box, number of events selector box, a scatter chart, pie chart, and one event"
-                    class="work-image"
-                    >
+                <div class="contact-text">
+                    <p>I'm currently looking for a remote role. If you think I could be a fit with your team or organization, contact me via email or LinkedIn.<br>I look forward to connecting!</p>
+                    <a href="mailto:kirkmeyer03@gmail.com" target="_blank">Email: kirkmeyer03@gmail.com</a>
                 </div>
-                <p>
-                    A progressive web app using serverless architecture to display event data from a public Google Calendar, built with a test-driven development approach.
-                </p>
-                <div class="work-button-container">
-                    <a href="https://kirkenstocks.github.io/meet/" target="_blank" class="work-button" style="margin-right: 2vw;">View Site</a>
-                    <a href="https://github.com/Kirkenstocks/meet" target="_blank" class="work-button" style="margin-left: 2vw;">GitHub</a>
-                </div>
-                <dialog class="modal">
-                    <div class="modal-toggle-container">
-                        <a class="modal-close">x</a>
-                    </div>
-                    <h2>Meet App</h2>
-                    <h3>Features</h3>
-                    <ul>
-                        <li>Users can view a list of events from multiple cities, filter events by a specific city, show/hide event details, and specify the number of events to display.</li>
-                        <li>Utilizes Google OAuth2 for user authorization and fetches event data via the Google Calendar API.</li>
-                        <li>AWS Lambda serverless functions are used to facilitate user authorization and event data retrieval.</li>
-                        <li>Charts display data about the types and location of events the user has filtered for.</li>
-                        <li>Adheres to Lighthouse's PWA standards.</li>
-                        <li>Supports offline usage and can be easily added to a device's home screen.</li>
-                    </ul>
-                    <h3>Technologies Used</h3>
-                    <div>
-                        <span class="technology">React</span>
-                        <span class="technology">JavaScript/JSX</span>
-                        <span class="technology">CSS</span>
-                        <span class="technology">AWS Lambda</span>
-                        <span class="technology">Google Calendar API</span>
-                        <span class="technology">Google OAuth2</span>
-                        <span class="technology">Recharts</span>
-                        <span class="technology">Jest/Jest-Cucumber</span>
-                        <span class="technology">Puppeteer</span>
-                        <span class="technology">GitHub Pages</span>
-                        <span class="technology">Atatus</span>
-                    </div>
-                </dialog>
             </div>
-            <div class="project-list__item">
-                <div class="modal-toggle-container">
-                    <a class="modal-open">+</a>
-                </div>
-                <h2 class="project-title">Movie API</h2>
-                <div class="work-img-container">
-                    <img src="img/movie_api_screenshot.png"
-                    alt="An image of the movie data displayed in a computer terminal screen"
-                    class="work-image"
-                    >
-                </div>
-                <p>
-                    A REST API that provides users with access to a movie database containing information about a small selection of movies, as well as their genre and director.
-                </p>
-                <div class="work-button-container">
-                    <a href="https://github.com/Kirkenstocks/movie_api" target="_blank" class="work-button">GitHub</a>
-                </div>
-                <dialog class="modal">
-                    <div class="modal-toggle-container">
-                        <a class="modal-close">x</a>
-                    </div>
-                    <h2>Movie API</h2>
-                    <h3>Features</h3>
-                    <ul>
-                        <li>This API is the backend for the myFlix web application, which has a version built in React and Angular.</li>
-                        <li>Allows myFlix users to access information about movies, genres, and directors via API endpoints. Users can also save movies to their list of favorites.</li>
-                        <li>Stores all movie and user data for myFlix in a NoSQL database.</li>
-                        <li>Utilizes user authentication, authorization, and data validation logic to maintain data security and integrity.</li>
-                        <li>All endpoints have been tested using Postman to verify functionality.</li>
-                    </ul>
-                    <h3>Technologies Used</h3>
-                    <div>
-                        <span class="technology">JavaScript</span>
-                        <span class="technology">Node.js</span>
-                        <span class="technology">CORS</span>
-                        <span class="technology">JSON Web Token</span>
-                        <span class="technology">Bcrypt</span>
-                        <span class="technology">Passport</span>
-                        <span class="technology">Body-parser</span>
-                        <span class="technology">MongoDB</span>
-                        <span class="technology">Mongoose</span>
-                        <span class="technology">Render (hosting)</span>
-                        <span class="technology">JSDoc</span>
-                        <span class="technology">Postman</span>
-                    </div>
-                </dialog>
-            </div>
-            <div class="project-list__item">
-                <div class="modal-toggle-container">
-                    <a class="modal-open">+</a>
-                </div>
-                <h2 class="project-title">myFlix (Angular)</h2>
-                <div class="work-img-container">
-                    <img src="img/myFlix_Angular_screenshot.png"
-                    alt="An image of the home page of myFlix, showing 4 Star Wars movies"
-                    class="work-image"
-                    >
-                </div>
-                <p>
-                    An Angular front-end build for my Movie API that allows users to look up information about every Star Wars movie, create a profile, and save favorite movies to their profile.
-                </p>
-                <div class="work-button-container">
-                    <a href="https://kirkenstocks.github.io/myFlix-Angular-client/welcome" target="_blank" class="work-button" style="margin-right: 2vw;">View Site</a>
-                    <a href="https://github.com/Kirkenstocks/myFlix-Angular-client" target="_blank" class="work-button" style="margin-left: 2vw;">GitHub</a>
-                </div>
-                <dialog class="modal">
-                    <div class="modal-toggle-container">
-                        <a class="modal-close">x</a>
-                    </div>
-                    <h2>myFlix (Angular)</h2>
-                    <p></p>
-                    <h3>Features</h3>
-                    <ul>
-                        <li>Fetches all movies with their details and displays them as cards.</li>
-                        <li>User can select a movie to be shown movie details including synopsis, director, and genre.</li>
-                        <li>Allows users to create an account and add movies to their list of favorites.</li>
-                        <li>Profile page displays the user's information and favorite movies, and allows the user to update their information or delete their account.</li>
-                    </ul>
-                    <h3>Technologies Used</h3>
-                    <div>
-                        <span class="technology">Angular</span>
-                        <span class="technology">Angular Material</span>
-                        <span class="technology">TypeScript</span>
-                        <span class="technology">HTML</span>
-                        <span class="technology">SCSS</span>
-                        <span class="technology">TypeDoc</span>
-                        <span class="technology">GitHub Pages</span>
-                    </div>
-                </dialog>
-            </div>
-            <div class="project-list__item">
-                <div class="modal-toggle-container">
-                    <a class="modal-open">+</a>
-                </div>
-                <h2 class="project-title">Chat App</h2>
-                <div class="work-img-container">
-                    <img src="img/chat_app_screenshot.png"
-                    alt="An image of the chat app welcome screen and the chat screen side-by-side"
-                    class="work-image"
-                >
-                </div>
-                <p>
-                    A mobile chat app built in React Native that allows users to send messages in a group chat room and share images and their location.
-                </p>
-                <div class="work-button-container">
-                    <a href="https://github.com/Kirkenstocks/chat-app" target="_blank" class="work-button">GitHub</a>
-                </div>  
-                <dialog class="modal">
-                    <div class="modal-toggle-container">
-                        <a class="modal-close">x</a>
-                    </div>
-                    <h2>Chat App</h2>
-                    <h3>Features</h3>
-                    <ul>
-                        <li>Users can enter a group chat room to send and recevie messages, and choose a background color for the chat screen.</li>
-                        <li>Allows users to send text messages, images, and their location.</li>
-                        <li>Messages are stored in a Google Firestore database and loaded asynchronously so they can be read offline.</li>
-                        <li>Anonymous authentication is handled by Google Firebase.</li>
-                    </ul>
-                    <h3>Technologies Used</h3>
-                    <div>
-                        <span class="technology">React Native</span>
-                        <span class="technology">Google Firestore and Firebase</span>
-                        <span class="technology">Expo</span>
-                        <span class="technology">GiftedChat</span>
-                        <span class="technology">JavaScript/JSX</span>
-                        <span class="technology">Android Studio</span>
-                    </div>
-                </dialog>
-            </div>
-            <div class="project-list__item">
-                <div class="modal-toggle-container">
-                    <a class="modal-open">+</a>
-                </div>
-                <h2 class="project-title">Pokédex App</h2>
-                <div class="work-img-container">
-                    <img src="img/pokedex_screenshot.png"
-                    alt="An image of the Pokédex app home page, with 27 Pokémon buttons displayed containing the names of each pokemon"
-                    class="work-image"
-                    >
-                </div>
-                <p>
-                    A simple web application that allows users to find information about the first 150 Pokémon. It fetches data from the Poké API and allows users to filter by name.
-                </p>
-                <div class="work-button-container">
-                    <a href="https://kirkenstocks.github.io/pokedex/" target="_blank" class= "work-button" style="margin-right: 2vw;">View Site</a>
-                    <a href="https://github.com/Kirkenstocks/pokedex" target="_blank" class="work-button" style="margin-left: 2vw;">GitHub</a>
-                </div>
-                <dialog class="modal">
-                    <div class="modal-toggle-container">
-                        <a class="modal-close">x</a>
-                    </div>
-                    <h2>Pokédex App</h2>
-                    <h3>Features</h3>
-                    <ul>
-                        <li>Loads data about the first 150 Pokémon from an external API and displays it once the page is loaded.</li>
-                        <li>Displays a button with each Pokémon's name.</li>
-                        <li>Upon clicking a Pokémon button, the user is shown a modal with details about the given Pokémon.</li>
-                        <li>User can search for a Pokémon by name.</li>
-                    </ul>
-                    <h3>Technologies Used</h3>
-                    <div>
-                        <span class="technology">HTML</span>
-                        <span class="technology">CSS</span>
-                        <span class="technology">JavaScript</span>
-                        <span class="technology">Bootstrap</span>
-                        <span class="technology">jQuery</span>
-                    </div>
-                </dialog>
-            </div>
-        </div>
-    </section>
-    <section id="contact">
-        <h1>Contact Me</h1>
-        <div
-            data-aos="fade-right"
-            data-aos-duration="750"
-            data-aos-easing="ease-in-out"
-        >
-            <div class="contact-img">
-                <a href="mailto:kirkmeyer03@gmail.com" target="_blank">
-                    <img src="img/email-icon.svg" alt="Image of an envelope with an outbound arrow" class="email-icon">
-                </a>
-            </div>
-            <div class="contact-text">
-                <p>I'm currently looking for a remote role. If you think I could be a fit with your team or organization, contact me via email or LinkedIn.<br>I look forward to connecting!</p>
-                <a href="mailto:kirkmeyer03@gmail.com" target="_blank">Email: kirkmeyer03@gmail.com</a>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
     <footer class="page-footer">
         <p>Find me on</p>
         <div class="social-media">
