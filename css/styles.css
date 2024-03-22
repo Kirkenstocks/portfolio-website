@@ -18,7 +18,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arimo', sans-serif;
     font-weight: var(--font-standard);
     font-size: 16px;
     line-height: 1.6;
@@ -437,7 +437,7 @@ button:focus, .button:focus {
     padding: 0 5vw;
 }
 
-#case-main h1, h2 {
+#case-main h1, #case-main h2 {
     text-align: center;
 }
 
