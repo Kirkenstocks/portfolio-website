@@ -471,6 +471,10 @@ button:focus, .button:focus {
     margin-top: 2vh;
 }
 
+#contact a {
+    text-decoration: none;
+}
+
 .email-icon {
     width: 20vw;
     margin-right: 5vw;
@@ -817,15 +821,4 @@ button:focus, .button:focus {
         width: 80%;
         padding-top: 0;
     }
-}.example {
-    display: -ms-grid;
-    display: grid;
-    -webkit-transition: all .5s;
-    transition: all .5s;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
-    background: linear-gradient(to bottom, white, black);
 }
