@@ -217,7 +217,7 @@ button:focus, .button:focus {
 /* skills section */
 
 /*start grid fallback*/
-.project-list__item {
+.skills-item {
     display: inline-block;
     width: 48%;
 }
@@ -231,6 +231,7 @@ button:focus, .button:focus {
     }
     
     .skills-item {
+        width: auto;
         background-color: var(--light-gray);
         border-radius: 10px;
         color: var(--teal-dark);
@@ -362,24 +363,26 @@ button:focus, .button:focus {
 .project-list__item {
     display: inline-block;
     width: 33%;
-}
+} 
 /*end grid fallback*/
 
 @supports (display: grid) {
-.project-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
-    margin: 0;
- }
-.project-list__item {
-    background-color: var(--light-gray);
-    width: auto;
-    min-height: auto;
-    margin: 0;
-    padding: 10px;
-    color: var(--teal-dark);
- }
+    .project-list {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 20px;
+        margin: 0;
+    }
+
+    .project-list__item {
+        grid-column: span 2;
+        background-color: var(--light-gray);
+        width: auto;
+        min-height: auto;
+        margin: 0;
+        padding: 10px;
+        color: var(--teal-dark);
+    } 
 }
 
 .project-title {
@@ -582,38 +585,39 @@ button:focus, .button:focus {
     }
   
     .project-list {
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-    margin: 0 7vw 0 7vw;
-  } 
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        margin: 0 7vw 0 7vw;
+    } 
 
-  .project-list__item {
-    margin: 1vh 0 1vh 0;
-  }
+    .project-list__item {
+        margin: 1vh 0 1vh 0;
+        grid-column: span 1;
+    }
 
-  .page-header__item {
-    flex: 0 1 50px;
-  }
+    .page-header__item {
+        flex: 0 1 50px;
+    }
 
-  .skills-container {
-    grid-gap: 10px;
-  }
+    .skills-container {
+        grid-gap: 10px;
+    }
 
-  .modal {    
-    width: 90vw;
-  }
+    .modal {    
+        width: 90vw;
+    }
 
-  .nursing-picture {
-    margin-top: 4vh;
-  }
+    .nursing-picture {
+        margin-top: 4vh;
+    }
 
-  .server {
-    display: block;
-  }
+    .server {
+        display: block;
+    }
 
-  .client-image div {
-    width: 100%;
-    margin-bottom: 4vh;
+    .client-image div {
+        width: 100%;
+        margin-bottom: 4vh;
 }
 }
 
@@ -644,6 +648,10 @@ button:focus, .button:focus {
     .project-list {
         grid-template-columns: 1fr 1fr;
     } 
+
+    .project-list__item {
+        grid-column: span 1;
+    }
 
     .modal {
         width: 80vw;
@@ -688,6 +696,10 @@ button:focus, .button:focus {
 
     .intro-image {
         padding-top: 10vh;
+    }
+
+    .project-list__item:last-child:nth-child(3n - 2) {
+        grid-column-end: 5;
     }
 }
 
